@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "SocialItemCell.h"
 
 @interface MenuViewController ()
 
@@ -23,7 +24,7 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     self.collectionView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0); // setting the inset from the top must be done programmatically in this case because the only option in storyboard is a section inset. Since we have multiple sections in this project, this will mean multiple insets, which we do not want.
     
@@ -63,7 +64,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    SocialItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor redColor];
     collectionView.backgroundColor = [UIColor whiteColor]; //collectionView is the parameter passed in?

@@ -15,6 +15,7 @@
 		B52169751B29FBFD00D83490 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52169731B29FBFD00D83490 /* LaunchScreen.xib */; };
 		B52169811B29FBFD00D83490 /* FloatingIconsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52169801B29FBFD00D83490 /* FloatingIconsTests.m */; };
 		B521698C1B29FD6300D83490 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521698B1B29FD6300D83490 /* MenuViewController.m */; };
+		B521698F1B2A21D300D83490 /* SocialItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B521698E1B2A21D300D83490 /* SocialItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		B52169801B29FBFD00D83490 /* FloatingIconsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingIconsTests.m; sourceTree = "<group>"; };
 		B521698A1B29FD6300D83490 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		B521698B1B29FD6300D83490 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B521698D1B2A21D300D83490 /* SocialItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialItemCell.h; sourceTree = "<group>"; };
+		B521698E1B2A21D300D83490 /* SocialItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				B521696C1B29FBFD00D83490 /* ViewController.m */,
 				B521698A1B29FD6300D83490 /* MenuViewController.h */,
 				B521698B1B29FD6300D83490 /* MenuViewController.m */,
+				B521698D1B2A21D300D83490 /* SocialItemCell.h */,
+				B521698E1B2A21D300D83490 /* SocialItemCell.m */,
 				B521696E1B29FBFD00D83490 /* Main.storyboard */,
 				B52169711B29FBFD00D83490 /* Images.xcassets */,
 				B52169731B29FBFD00D83490 /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B521698F1B2A21D300D83490 /* SocialItemCell.m in Sources */,
 				B521696D1B29FBFD00D83490 /* ViewController.m in Sources */,
 				B521696A1B29FBFD00D83490 /* AppDelegate.m in Sources */,
 				B52169671B29FBFD00D83490 /* main.m in Sources */,
