@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *myView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
--(void)setUpSocialItem:(SocialItem*)socialItem;
+//-(void)setUpSocialItem:(SocialItem*)socialItem;
 
 
 @end

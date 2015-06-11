@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "SocialItemCell.h"
+#import "SocialItem.h"
 
 @interface MenuViewController ()
 
@@ -29,6 +30,12 @@ static NSString * const reuseIdentifier = @"Cell";
     self.collectionView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0); // setting the inset from the top must be done programmatically in this case because the only option in storyboard is a section inset. Since we have multiple sections in this project, this will mean multiple insets, which we do not want.
     
     // Do any additional setup after loading the view.
+    SocialItem *twitter = [[SocialItem alloc] initWithSocialItem:@"Twitter" andImage:[UIImage imageNamed:@"icon-twitter"] andColor:[UIColor colorWithRed:0.255 green:0.557 blue:0.910 alpha:1] andSummary:@"Twitter is an online social networking service that enables users to send and read short 140-character messages called \"tweets\"."];
+    SocialItem *facebook = [[SocialItem alloc] initWithSocialItem:@"Facebook" andImage:[UIImage imageNamed:@"icon-facebook"] andColor:[UIColor colorWithRed:.239 green:0.353 blue:0.588 alpha:1] andSummary:@"Facebook (formerly thefacebook) is an online social networking service headquartered in Menlo Park, California. Its name comes from a colloquialism for the directory given to students at some American universities."];
+    SocialItem *youtube = [[SocialItem alloc] initWithSocialItem:@"YouTube" andImage:[UIImage imageNamed:@"icon-youtube"] andColor:[UIColor colorWithRed:0.729 green:0.188 blue:0.180 alpha:1] andSummary:@"YouTube is a video-sharing website headquartered in San Bruno, California. The service was created by three former PayPal employees in February 2005 and has been owned by Google since late 2006. The site allows users to upload, view, and share videos."];
+    SocialItem *vimeo = [[SocialItem alloc] initWithSocialItem:@"Vimeo" andImage:[UIImage imageNamed:@"icon-vimeo"] andColor:[UIColor colorWithRed:0.329 green:0.737 blue:0.988 alpha:1] andSummary:@"Vimeo is a U.S.-based video-sharing website on which users can upload, share and view videos. Vimeo was founded in November 2004 by Jake Lodwick and Zach Klein."];
+    SocialItem *instagram = [[SocialItem alloc] initWithSocialItem:@"Instagram" andImage:[UIImage imageNamed:@"icon-instagram"] andColor:[UIColor colorWithRed:0.325 green:0.498 blue:0.635 alpha:1] andSummary:@"Instagram is an online mobile photo-sharing, video-sharing and social networking service that enables its users to take pictures and videos, and share them on a variety of social networking platforms, such as Facebook, Twitter, Tumblr and Flickr."];
+    
 }
 
 - (void)didReceiveMemoryWarning {

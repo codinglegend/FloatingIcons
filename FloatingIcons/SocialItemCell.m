@@ -23,9 +23,9 @@
     self.layer.masksToBounds = YES;
 }
 
--(void)setUpSocialItem:(SocialItem*)socialItem{
-    self.imageView.image = 
-}
+//-(void)setUpSocialItem:(SocialItem*)socialItem{
+//    self.imageView.image = 
+//}
 
 
 
