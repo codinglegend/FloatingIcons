@@ -74,6 +74,19 @@ static NSString * const reuseIdentifier = @"Cell";
     return cell;
 }
 
+-(UIEdgeInsets)collectionView:(UICollectionView*)collectionView
+                        layout:(UICollectionViewLayout *)collectionViewLayout
+       insetForSectionAtIndex:(NSInteger)section{
+    if (section == 0){
+        return UIEdgeInsetsMake(0, self.collectionView.frame.size.width/5, 20, self.collectionView.frame.size.width/5); // (top, left, bottom, right)
+    }else if (section == 1)
+        return UIEdgeInsetsMake(0, self.collectionView.frame.size.width/24, 0, self.collectionView.frame.size.width/24);
+    else{
+        return UIEdgeInsetsZero;
+    }
+}
+
+
 #pragma mark <UICollectionViewDelegate>
 
 /*
