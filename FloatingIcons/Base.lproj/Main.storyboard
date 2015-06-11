@@ -39,7 +39,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="imageView" destination="gWI-8q-wQe" id="I8z-k1-iPQ"/>
-                                    <outlet property="myView" destination="YGy-gv-XQq" id="hvA-Fv-43r"/>
+                                    <outlet property="viewColor" destination="YGy-gv-XQq" id="TTe-u3-xKy"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
