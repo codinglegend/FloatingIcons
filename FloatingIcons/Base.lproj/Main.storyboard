@@ -25,18 +25,30 @@
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGy-gv-XQq" userLabel="viewColour">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGy-gv-XQq" userLabel="viewColour">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWI-8q-wQe" userLabel="imageView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gWI-8q-wQe" userLabel="imageView">
+                                                    <rect key="frame" x="15" y="15" width="70" height="70"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="gWI-8q-wQe" firstAttribute="top" secondItem="YGy-gv-XQq" secondAttribute="top" constant="15" id="84a-NM-PHT"/>
+                                                <constraint firstAttribute="trailing" secondItem="gWI-8q-wQe" secondAttribute="trailing" constant="15" id="AD3-we-5nZ"/>
+                                                <constraint firstItem="gWI-8q-wQe" firstAttribute="leading" secondItem="YGy-gv-XQq" secondAttribute="leading" constant="15" id="gI2-IW-s72"/>
+                                                <constraint firstAttribute="bottom" secondItem="gWI-8q-wQe" secondAttribute="bottom" constant="15" id="nHW-hD-Uc1"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="YGy-gv-XQq" firstAttribute="top" secondItem="Cfq-Qw-zfv" secondAttribute="top" id="201-7D-g0N"/>
+                                    <constraint firstAttribute="trailing" secondItem="YGy-gv-XQq" secondAttribute="trailing" id="KS6-wx-ylY"/>
+                                    <constraint firstItem="YGy-gv-XQq" firstAttribute="leading" secondItem="Cfq-Qw-zfv" secondAttribute="leading" id="lYi-Hb-1EM"/>
+                                    <constraint firstAttribute="bottom" secondItem="YGy-gv-XQq" secondAttribute="bottom" id="uFg-c2-yZM"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="gWI-8q-wQe" id="I8z-k1-iPQ"/>
                                     <outlet property="viewColor" destination="YGy-gv-XQq" id="TTe-u3-xKy"/>
