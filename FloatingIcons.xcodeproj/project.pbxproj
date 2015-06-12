@@ -17,6 +17,7 @@
 		B521698C1B29FD6300D83490 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521698B1B29FD6300D83490 /* MenuViewController.m */; };
 		B521698F1B2A21D300D83490 /* SocialItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B521698E1B2A21D300D83490 /* SocialItemCell.m */; };
 		B52169921B2A375600D83490 /* SocialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B52169911B2A375600D83490 /* SocialItem.m */; };
+		B52169951B2A72BE00D83490 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52169941B2A72BE00D83490 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		B521698E1B2A21D300D83490 /* SocialItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItemCell.m; sourceTree = "<group>"; };
 		B52169901B2A375600D83490 /* SocialItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialItem.h; sourceTree = "<group>"; };
 		B52169911B2A375600D83490 /* SocialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItem.m; sourceTree = "<group>"; };
+		B52169931B2A72BE00D83490 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B52169941B2A72BE00D83490 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				B521698E1B2A21D300D83490 /* SocialItemCell.m */,
 				B52169901B2A375600D83490 /* SocialItem.h */,
 				B52169911B2A375600D83490 /* SocialItem.m */,
+				B52169931B2A72BE00D83490 /* DetailViewController.h */,
+				B52169941B2A72BE00D83490 /* DetailViewController.m */,
 				B521696E1B29FBFD00D83490 /* Main.storyboard */,
 				B52169711B29FBFD00D83490 /* Images.xcassets */,
 				B52169731B29FBFD00D83490 /* LaunchScreen.xib */,
@@ -240,6 +245,7 @@
 				B52169921B2A375600D83490 /* SocialItem.m in Sources */,
 				B52169671B29FBFD00D83490 /* main.m in Sources */,
 				B521698C1B29FD6300D83490 /* MenuViewController.m in Sources */,
+				B52169951B2A72BE00D83490 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

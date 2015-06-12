@@ -9,9 +9,11 @@
 #import "MenuViewController.h"
 #import "SocialItemCell.h"
 #import "SocialItem.h"
+#import "DetailViewController.h"
 
 @interface MenuViewController ()
 @property (nonatomic) NSArray* socialItems;
+@property (nonatomic, strong) SocialItem *selectedSocialItem;
 
 @end
 
@@ -107,8 +109,25 @@ static NSString * const reuseIdentifier = @"Cell";
     }
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showDetails"]){
+        DetailViewController *detailViewController = (DetailViewController *)segue.destinationViewController;
+        // Give the selected social item to the detail view controller.
+        detailViewController.selectedItem = self.selectedSocialItem;
+    }
+
+}
 
 #pragma mark <UICollectionViewDelegate>
+
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    self.selectedSocialItem = [self.socialItems objectAtIndex:indexPath.item];
+    
+    [self performSegueWithIdentifier:@"showDetails" sender:self];
+}
+
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
