@@ -10,10 +10,7 @@
 #import "SocialItem.h"
 
 @interface SocialItemCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIView *viewColor;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
--(void)setUpSocialItem:(SocialItem*)socialItem;
-
+@property (nonatomic) SocialItem* object;
 
 @end

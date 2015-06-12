@@ -53,6 +53,7 @@
                                 <connections>
                                     <outlet property="imageView" destination="gWI-8q-wQe" id="I8z-k1-iPQ"/>
                                     <outlet property="viewColor" destination="YGy-gv-XQq" id="TTe-u3-xKy"/>
+                                    <segue destination="ylb-Rn-BnB" kind="show" id="2L7-2W-GXY"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -62,9 +63,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Qja-eX-wJR"/>
-                    <connections>
-                        <segue destination="ylb-Rn-BnB" kind="show" identifier="showDetails" id="Ndd-px-odA"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRI-hE-HWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,14 +80,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-DH-2ak">
-                                <rect key="frame" x="-5" y="54" width="101" height="57"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="icon-back"/>
-                                <connections>
-                                    <action selector="backButtonWasPressed:" destination="ylb-Rn-BnB" eventType="touchUpInside" id="rAB-bM-hd2"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GO9-R8-RMq">
                                 <rect key="frame" x="180" y="99" width="240" height="243"/>
                                 <constraints>
@@ -109,15 +99,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-DH-2ak">
+                                <rect key="frame" x="30" y="50" width="13" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="icon-back"/>
+                                <connections>
+                                    <action selector="backButtonWasPressed:" destination="ylb-Rn-BnB" eventType="touchUpInside" id="rAB-bM-hd2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Gs8-lq-3tq" firstAttribute="leading" secondItem="NYv-Gh-FaS" secondAttribute="leadingMargin" constant="177" id="AKT-kI-48M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dsf-X0-Uk4" secondAttribute="trailing" constant="4" id="FFV-BY-EBz"/>
                             <constraint firstItem="Dsf-X0-Uk4" firstAttribute="leading" secondItem="NYv-Gh-FaS" secondAttribute="leadingMargin" constant="4" id="KFv-Mp-2aP"/>
+                            <constraint firstItem="Ey9-DH-2ak" firstAttribute="top" secondItem="DpA-pI-hvu" secondAttribute="bottom" constant="30" id="NdY-TM-aWX"/>
                             <constraint firstItem="Gs8-lq-3tq" firstAttribute="top" secondItem="GO9-R8-RMq" secondAttribute="bottom" constant="15" id="Q1a-Io-iNW"/>
                             <constraint firstItem="Dsf-X0-Uk4" firstAttribute="top" secondItem="Gs8-lq-3tq" secondAttribute="bottom" constant="21" id="V8o-x2-rit"/>
                             <constraint firstAttribute="centerX" secondItem="GO9-R8-RMq" secondAttribute="centerX" id="Zre-PS-XvC"/>
+                            <constraint firstItem="Ey9-DH-2ak" firstAttribute="leading" secondItem="NYv-Gh-FaS" secondAttribute="leading" constant="30" id="dPT-bz-9Sd"/>
                             <constraint firstAttribute="centerY" secondItem="GO9-R8-RMq" secondAttribute="centerY" constant="80" id="prt-95-tUQ"/>
                             <constraint firstAttribute="centerX" secondItem="Gs8-lq-3tq" secondAttribute="centerX" id="xEq-bM-nDA"/>
                         </constraints>

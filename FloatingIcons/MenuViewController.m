@@ -83,17 +83,15 @@ static NSString * const reuseIdentifier = @"Cell";
     
 //    cell.backgroundColor = [self.socialItems[indexPath.item] color];
 //    cell.imageView.image = [self.socialItems[indexPath.item] image]
-// why do this wehn we can call the method we already defined in socialItemCell.m
+// why do this wehn we can call the method we already defined in socialItemCell.m called setUpSocialItem
     
     if (indexPath.section > 0){
-    [cell setUpSocialItem:self.socialItems[indexPath.item+2]];
+    cell.object =  self.socialItems[indexPath.item+indexPath.length]; //instead of hardcoding 2 for the length of the first section, input the actual length of the section (documentation on length).
+        // this may not be completely right
+//        NSLog(@"Number of items in section 0 is: %@", indexPath);
     }else{
-        [cell setUpSocialItem:self.socialItems[indexPath.item]];
+        cell.object = self.socialItems[indexPath.item];
     }
-
-
-
-    
     return cell;
 }
 
@@ -109,24 +107,15 @@ static NSString * const reuseIdentifier = @"Cell";
     }
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"showDetails"]){
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(SocialItemCell*)sender{
         DetailViewController *detailViewController = (DetailViewController *)segue.destinationViewController;
         // Give the selected social item to the detail view controller.
-        detailViewController.selectedItem = self.selectedSocialItem;
-    }
-
+        detailViewController.selectedItem = sender.object;
 }
 
 #pragma mark <UICollectionViewDelegate>
 
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    self.selectedSocialItem = [self.socialItems objectAtIndex:indexPath.item];
-    
-    [self performSegueWithIdentifier:@"showDetails" sender:self];
-}
 
 
 /*
