@@ -112,7 +112,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="3IP-af-B7a" firstAttribute="top" secondItem="Dsf-X0-Uk4" secondAttribute="bottom" constant="186" id="4x6-x2-Afk"/>
                             <constraint firstItem="Gs8-lq-3tq" firstAttribute="leading" secondItem="NYv-Gh-FaS" secondAttribute="leadingMargin" constant="177" id="AKT-kI-48M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dsf-X0-Uk4" secondAttribute="trailing" constant="4" id="FFV-BY-EBz"/>
                             <constraint firstItem="Dsf-X0-Uk4" firstAttribute="leading" secondItem="NYv-Gh-FaS" secondAttribute="leadingMargin" constant="4" id="KFv-Mp-2aP"/>
