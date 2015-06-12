@@ -81,10 +81,14 @@ static NSString * const reuseIdentifier = @"Cell";
     
 //    cell.backgroundColor = [self.socialItems[indexPath.item] color];
 //    cell.imageView.image = [self.socialItems[indexPath.item] image]
+// why do this wehn we can call the method we already defined in socialItemCell.m
     
-    [cell setUpSocialItem:self.socialItems[indexPath.item]];
+    if (indexPath.section > 0){
+    [cell setUpSocialItem:self.socialItems[indexPath.item+2]];
+    }else{
+        [cell setUpSocialItem:self.socialItems[indexPath.item]];
+    }
 
-    
 
 
     
