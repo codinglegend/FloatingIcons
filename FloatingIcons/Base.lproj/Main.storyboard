@@ -83,6 +83,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-DH-2ak">
                                 <rect key="frame" x="-5" y="54" width="101" height="57"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="icon-back"/>
                                 <connections>
                                     <action selector="backButtonWasPressed:" destination="ylb-Rn-BnB" eventType="touchUpInside" id="rAB-bM-hd2"/>

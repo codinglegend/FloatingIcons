@@ -10,12 +10,16 @@
 
 @implementation DetailViewController
 
--(void)viewDidAppear:(BOOL)animated{
+
+-(void)viewDidLoad{
+    [super viewDidLoad];
     self.bigImageView.image = self.selectedItem.image;
     self.view.backgroundColor = self.selectedItem.color;
-    
-    
 }
+
+//-(void)viewDidAppear:(BOOL)animated{  // code used to be in here but it was lagging 
+//    [super viewDidAppear:animated];
+//}
 
 - (IBAction)backButtonWasPressed:(UIButton *)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
