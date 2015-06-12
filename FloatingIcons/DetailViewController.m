@@ -15,6 +15,8 @@
     [super viewDidLoad];
     self.bigImageView.image = self.selectedItem.image;
     self.view.backgroundColor = self.selectedItem.color;
+    self.titleLabel.text = self.selectedItem.name;
+    self.summaryLabel.text = self.selectedItem.summary;
 }
 
 //-(void)viewDidAppear:(BOOL)animated{  // code used to be in here but it was lagging 
